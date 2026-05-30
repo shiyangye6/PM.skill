@@ -18,6 +18,8 @@
 
 ## 如何使用
 
+### 不安装，直接复制 Prompt
+
 ```text
 请使用 <skill-id> 帮我审查下面这个产品想法，并输出第一版 Spec.md：
 
@@ -28,6 +30,34 @@
 
 ```text
 请使用 <skill-id> 从 <方法论视角> 帮我判断这个 MVP 范围是否过大。
+```
+
+### 安装到本地 skills 目录
+
+如果你的 AI 编程工具支持本地 skills，可以克隆仓库到对应目录。
+
+Claude 本地 skill 示例：
+
+```bash
+git clone <repo-url> ~/.claude/skills/<skill-id>
+```
+
+Windows PowerShell 示例：
+
+```powershell
+git clone <repo-url> "$env:USERPROFILE\.claude\skills\<skill-id>"
+```
+
+Codex 本地 skill 示例：
+
+```bash
+git clone <repo-url> ~/.codex/skills/<skill-id>
+```
+
+安装后可以这样触发：
+
+```text
+使用 <skill-id> 帮我审查这个产品想法。
 ```
 
 ## 仓库结构

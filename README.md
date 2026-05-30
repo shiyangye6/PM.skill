@@ -34,6 +34,8 @@
 
 ## 快速使用
 
+### 方式 1：不安装，直接复制 Prompt
+
 把下面这段交给 AI 编程工具，并附上你的产品想法：
 
 ```text
@@ -48,6 +50,55 @@
 
 ```text
 请基于 templates/DevDoc.md 生成第一版 DevDoc.md，要求包含数据模型、页面结构、接口草案、状态流转、边界情况和验收标准。
+```
+
+### 方式 2：使用某个产品经理 Skill
+
+如果你想调用某个单独的产品经理视角，先到下面的 Skill 链接目录，打开对应仓库，然后复制该仓库里的 `SKILL.md` 或快速使用 Prompt。
+
+例如：
+
+```text
+请使用张小龙产品视角 Skill，帮我审查下面这个产品想法。
+重点看：这个功能是否合理、是否打扰用户、MVP 是否过重、有没有更简单的做法。
+
+我的产品想法：
+<粘贴你的想法>
+```
+
+### 方式 3：安装到本地 skills 目录
+
+如果你的 AI 编程工具支持本地 skills，可以把本仓库或单个 skill 仓库克隆到对应的 skills 目录。
+
+Claude 本地 skill 示例：
+
+```bash
+git clone https://github.com/shiyangye6/PM.skill.git ~/.claude/skills/PM.skill
+git clone https://github.com/shiyangye6/zhang-xiaolong-perspective.git ~/.claude/skills/zhang-xiaolong-perspective
+```
+
+Windows PowerShell 示例：
+
+```powershell
+git clone https://github.com/shiyangye6/PM.skill.git "$env:USERPROFILE\.claude\skills\PM.skill"
+git clone https://github.com/shiyangye6/zhang-xiaolong-perspective.git "$env:USERPROFILE\.claude\skills\zhang-xiaolong-perspective"
+```
+
+Codex 本地 skill 示例：
+
+```bash
+git clone https://github.com/shiyangye6/PM.skill.git ~/.codex/skills/PM.skill
+git clone https://github.com/shiyangye6/zhang-xiaolong-perspective.git ~/.codex/skills/zhang-xiaolong-perspective
+```
+
+安装后，可以这样触发：
+
+```text
+使用 pm-spec-writer 帮我把这个想法整理成 Spec.md。
+```
+
+```text
+使用 zhang-xiaolong-perspective 帮我审查这个功能该不该做。
 ```
 
 ---
