@@ -50,4 +50,4 @@
 
 ## 主索引
 
-本 skill 属于 [`Awesome Product Manager Skills`](https://github.com/shiyangye6/PM.skill) 目录。
+本 skill 属于 [`产品经理 Skill 图鉴`](https://github.com/shiyangye6/PM.skill) 目录。

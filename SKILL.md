@@ -41,11 +41,11 @@ Choose the output based on the user's request:
 
 Prefer a balanced panel:
 
-- One user-value lens, such as Yu Jun or Marty Cagan.
+- One user-value lens, such as 俞军 or Marty Cagan.
 - One discovery lens, such as Teresa Torres.
-- One experience lens, such as Zhang Xiaolong, Jobs, or Julie Zhuo.
+- One experience lens, such as 张小龙, Jobs, or Julie Zhuo.
 - One growth or strategy lens, such as Lenny Rachitsky, Gibson Biddle, or a growth PM archetype.
-- One execution lens, such as Su Jie or a shipping-focused PM archetype.
+- One execution lens, such as 苏杰 or a shipping-focused PM archetype.
 
 ## Document Standards
 

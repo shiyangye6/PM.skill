@@ -96,7 +96,7 @@ skills:
       - scope cutting
 
   - id: yu-jun-product-skill
-    name: Yu Jun Product Skill
+    name: 俞军产品 Skill
     type: person-method-skill
     status: planned
     repo: null
@@ -108,7 +108,7 @@ skills:
       - demand matching
 
   - id: zhang-xiaolong-product-skill
-    name: Zhang Xiaolong Product Skill
+    name: 张小龙产品 Skill
     type: person-method-skill
     status: planned
     repo: null
@@ -120,7 +120,7 @@ skills:
       - default behavior
 
   - id: zhang-yiming-product-skill
-    name: Zhang Yiming Product Skill
+    name: 张一鸣产品 Skill
     type: person-method-skill
     status: planned
     repo: null
@@ -132,7 +132,7 @@ skills:
       - systems thinking
 
   - id: liang-ning-product-skill
-    name: Liang Ning Product Skill
+    name: 梁宁产品 Skill
     type: person-method-skill
     status: planned
     repo: null
@@ -144,7 +144,7 @@ skills:
       - pain points and delight
 
   - id: su-jie-product-skill
-    name: Su Jie Product Skill
+    name: 苏杰产品 Skill
     type: person-method-skill
     status: planned
     repo: null

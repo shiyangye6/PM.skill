@@ -1,4 +1,4 @@
-# Awesome Product Manager Skills
+# 产品经理 Skill 图鉴
 
 ## 面向独立开发者和 AI 编程新人的产品经理 Skill 主索引
 
@@ -120,6 +120,12 @@ yu-jun-product-skill
 zhang-xiaolong-product-skill
 ```
 
+展示名规则：
+
+- 中文产品经理用中文名，例如“俞军产品 Skill”。
+- 英文产品经理用英文名，例如“Marty Cagan Product Skill”。
+- GitHub 仓库名建议继续使用英文或拼音 slug，方便链接、安装和传播。
+
 每个仓库至少包含：
 
 ```text
@@ -160,11 +166,11 @@ zhang-xiaolong-product-skill
 | Lenny Rachitsky Growth Skill | 冷启动、增长、GTM、playbook | 计划中 | 待创建 |
 | Julie Zhuo Design PM Skill | 设计协作、体验评审、清晰表达 | 计划中 | 待创建 |
 | Jobs Product Taste Skill | 端到端体验、取舍、产品品味 | 计划中 | 待创建 |
-| Yu Jun Product Skill | 用户价值、交易模型、效用分析 | 计划中 | 待创建 |
-| Zhang Xiaolong Product Skill | 克制、自然、用户心理、关系链 | 计划中 | 待创建 |
-| Zhang Yiming Product Skill | 信息效率、反馈系统、数据迭代 | 计划中 | 待创建 |
-| Liang Ning Product Skill | 场景、情绪、痛点爽点、产品人格 | 计划中 | 待创建 |
-| Su Jie Product Skill | 需求分析、PRD、产品推进 | 计划中 | 待创建 |
+| 俞军产品 Skill | 用户价值、交易模型、效用分析 | 计划中 | 待创建 |
+| 张小龙产品 Skill | 克制、自然、用户心理、关系链 | 计划中 | 待创建 |
+| 张一鸣产品 Skill | 信息效率、反馈系统、数据迭代 | 计划中 | 待创建 |
+| 梁宁产品 Skill | 场景、情绪、痛点爽点、产品人格 | 计划中 | 待创建 |
+| 苏杰产品 Skill | 需求分析、PRD、产品推进 | 计划中 | 待创建 |
 | Growth PM Skill | AARRR、留存、变现、实验 | 计划中 | 待创建 |
 
 详细注册表见 [`catalog/skills.yml`](./catalog/skills.yml)。
