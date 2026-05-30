@@ -13,6 +13,11 @@
 - 包含适合场景、关注问题、输出偏好。
 - 至少能帮助生成 `Spec.md`、`PRD.md` 或 `DevDoc.md`。
 
+如果某个方法论已经成熟到可以独立使用，请不要把完整长篇 skill 直接塞进主仓库。优先按 `workflows/single-skill-release.md` 拆成独立 GitHub 仓库，然后回到主仓库更新：
+
+- `README.md` 的 Skill 链接目录
+- `catalog/skills.yml`
+
 ## 新增模板
 
 请放到 `templates/`。
@@ -40,3 +45,4 @@
 - 未经授权的私人材料。
 - 长篇复制书籍、课程或付费内容。
 - 只有鸡汤，没有产品决策价值的内容。
+- 把 `.claude/` 中的蒸馏过程、半成品和本地实验文件上传到主仓库。

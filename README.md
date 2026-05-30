@@ -1,10 +1,23 @@
-# Product Manager Persona Skills
+# Awesome Product Manager Skills
 
-## 面向独立开发者和 AI 编程新人的产品经理蒸馏项目
+## 面向独立开发者和 AI 编程新人的产品经理 Skill 主索引
 
-这个项目模仿 `awesome-persona-skills` 的策展方式，但目标更垂直：把国内外优秀产品经理、产品思想家、创业者和增长操盘手的公开方法论，整理成一组可被 AI 协作使用的产品工作流。
+这个项目是一个主页面和索引仓库，用来收集、孵化和链接一组“产品经理方法论 Skill”。
 
-它不是为了“复刻某个人”，而是为了在你做独立产品、AI 应用、小工具、SaaS、内容产品时，帮你快速产出第一版：
+每一个成熟的产品经理 Skill 都建议独立成一个 GitHub 仓库，类似：
+
+- `marty-cagan-product-skill`
+- `teresa-torres-discovery-skill`
+- `yu-jun-product-skill`
+- `zhang-xiaolong-product-skill`
+
+当前仓库负责做三件事：
+
+- 展示所有产品经理 Skill 的目录和链接。
+- 提供通用的 `pm-spec-writer` 元 Skill，帮助生成第一版产品文档。
+- 提供单个产品经理 Skill 的蒸馏、发布和 README 模板。
+
+它不是为了“复刻某个人”，而是为了把公开方法论整理成可被 AI 协作使用的产品工作流。在你做独立产品、AI 应用、小工具、SaaS、内容产品时，它可以帮你快速产出第一版：
 
 - `Spec.md`
 - `PRD.md`
@@ -46,6 +59,8 @@
 ├── SKILL.md                         # 给 AI 编程工具读取的核心技能说明
 ├── README.md                        # 项目说明和目录
 ├── CONTRIBUTING.md                  # 如何新增产品经理方法论
+├── catalog/
+│   └── skills.yml                   # 产品经理 Skill 注册表
 ├── personas/
 │   ├── product-leaders.md           # 国内外产品经理/产品思想家方法论目录
 │   └── archetypes.md                # 抽象后的产品经理原型
@@ -55,13 +70,104 @@
 ├── templates/
 │   ├── Spec.md                      # 产品规格文档模板
 │   ├── PRD.md                       # 产品需求文档模板
-│   └── DevDoc.md                    # 开发文档模板
+│   ├── DevDoc.md                    # 开发文档模板
+│   ├── ProductLeader.SKILL.md       # 单个产品经理 Skill 模板
+│   └── SkillRepo.README.md          # 单个 Skill 仓库 README 模板
 ├── workflows/
 │   ├── spec-first.md                # 从想法到第一版 Spec 的流程
-│   └── persona-distillation.md      # 新增产品经理方法论的蒸馏流程
+│   ├── persona-distillation.md      # 新增产品经理方法论的蒸馏流程
+│   └── single-skill-release.md      # 单个 Skill 独立发布流程
 └── examples/
     └── indie-ai-app.Spec.md         # 示例：独立 AI 应用第一版 Spec
 ```
+
+---
+
+## 仓库组织建议
+
+推荐使用“两层结构”：
+
+### 1. 主索引仓库
+
+当前仓库：[`shiyangye6/PM.skill`](https://github.com/shiyangye6/PM.skill)
+
+用途：
+
+- 放总目录。
+- 放通用模板。
+- 放发布规范。
+- 放 `pm-spec-writer` 这种跨人物的元 Skill。
+- 链接每个独立产品经理 Skill 仓库。
+
+### 2. 单个 Skill 仓库
+
+每个成熟产品经理方法论单独一个仓库。
+
+建议命名：
+
+```text
+<person-or-framework>-product-skill
+<person-or-framework>-discovery-skill
+<person-or-framework>-growth-skill
+```
+
+例如：
+
+```text
+marty-cagan-product-skill
+teresa-torres-discovery-skill
+yu-jun-product-skill
+zhang-xiaolong-product-skill
+```
+
+每个仓库至少包含：
+
+```text
+.
+├── README.md
+├── SKILL.md
+├── references/
+│   └── sources.md
+└── examples/
+    └── sample-output.md
+```
+
+### 3. 本地孵化区
+
+`.claude/` 可以继续作为本地蒸馏工作区，不上传到主仓库。
+
+适合放：
+
+- 女娲 skill
+- 原始提示词
+- 半成品产品经理 skill
+- 资料摘要
+- 对比实验
+- 未清洗的草稿
+
+等某个 skill 稳定后，再从 `.claude/` 拆出来，按 `templates/ProductLeader.SKILL.md` 和 `templates/SkillRepo.README.md` 建独立仓库。
+
+---
+
+## Skill 链接目录
+
+| Skill | 定位 | 状态 | 仓库 |
+| --- | --- | --- | --- |
+| PM Spec Writer | 通用产品文档生成元 Skill | 已发布 | [shiyangye6/PM.skill](https://github.com/shiyangye6/PM.skill) |
+| Marty Cagan Product Skill | 产品发现、赋能团队、结果导向 | 计划中 | 待创建 |
+| Teresa Torres Discovery Skill | 持续发现、机会树、用户访谈 | 计划中 | 待创建 |
+| Gibson Biddle Strategy Skill | 产品战略、品牌承诺、指标树 | 计划中 | 待创建 |
+| Lenny Rachitsky Growth Skill | 冷启动、增长、GTM、playbook | 计划中 | 待创建 |
+| Julie Zhuo Design PM Skill | 设计协作、体验评审、清晰表达 | 计划中 | 待创建 |
+| Jobs Product Taste Skill | 端到端体验、取舍、产品品味 | 计划中 | 待创建 |
+| Yu Jun Product Skill | 用户价值、交易模型、效用分析 | 计划中 | 待创建 |
+| Zhang Xiaolong Product Skill | 克制、自然、用户心理、关系链 | 计划中 | 待创建 |
+| Zhang Yiming Product Skill | 信息效率、反馈系统、数据迭代 | 计划中 | 待创建 |
+| Liang Ning Product Skill | 场景、情绪、痛点爽点、产品人格 | 计划中 | 待创建 |
+| Su Jie Product Skill | 需求分析、PRD、产品推进 | 计划中 | 待创建 |
+| Growth PM Skill | AARRR、留存、变现、实验 | 计划中 | 待创建 |
+
+详细注册表见 [`catalog/skills.yml`](./catalog/skills.yml)。
 
 ---
 

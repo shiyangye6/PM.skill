@@ -1,0 +1,169 @@
+version: 0.1
+homepage: https://github.com/shiyangye6/PM.skill
+policy:
+  publishing_model: hub-and-spoke
+  hub_repository: shiyangye6/PM.skill
+  incubation_path: .claude/
+  publish_when:
+    - has_complete_SKILL_md
+    - has_README
+    - has_public_source_notes
+    - has_examples
+    - avoids_impersonation_claims
+skills:
+  - id: pm-spec-writer
+    name: PM Spec Writer
+    type: meta-skill
+    status: published
+    repo: https://github.com/shiyangye6/PM.skill
+    focus:
+      - Spec.md
+      - PRD.md
+      - DevDoc.md
+      - indie builders
+      - AI coding beginners
+
+  - id: marty-cagan-product-skill
+    name: Marty Cagan Product Skill
+    type: person-method-skill
+    status: planned
+    repo: null
+    suggested_repo: https://github.com/shiyangye6/marty-cagan-product-skill
+    focus:
+      - product discovery
+      - empowered product teams
+      - outcomes
+      - risk reduction
+
+  - id: teresa-torres-discovery-skill
+    name: Teresa Torres Discovery Skill
+    type: person-method-skill
+    status: planned
+    repo: null
+    suggested_repo: https://github.com/shiyangye6/teresa-torres-discovery-skill
+    focus:
+      - continuous discovery
+      - opportunity solution tree
+      - interviews
+      - assumption testing
+
+  - id: gibson-biddle-strategy-skill
+    name: Gibson Biddle Strategy Skill
+    type: person-method-skill
+    status: planned
+    repo: null
+    suggested_repo: https://github.com/shiyangye6/gibson-biddle-strategy-skill
+    focus:
+      - product strategy
+      - brand promise
+      - metrics
+      - tradeoffs
+
+  - id: lenny-rachitsky-growth-skill
+    name: Lenny Rachitsky Growth Skill
+    type: person-method-skill
+    status: planned
+    repo: null
+    suggested_repo: https://github.com/shiyangye6/lenny-rachitsky-growth-skill
+    focus:
+      - growth
+      - cold start
+      - go-to-market
+      - activation
+
+  - id: julie-zhuo-design-pm-skill
+    name: Julie Zhuo Design PM Skill
+    type: person-method-skill
+    status: planned
+    repo: null
+    suggested_repo: https://github.com/shiyangye6/julie-zhuo-design-pm-skill
+    focus:
+      - design collaboration
+      - product critique
+      - user experience
+      - team clarity
+
+  - id: jobs-product-taste-skill
+    name: Jobs Product Taste Skill
+    type: public-method-skill
+    status: planned
+    repo: null
+    suggested_repo: https://github.com/shiyangye6/jobs-product-taste-skill
+    focus:
+      - product taste
+      - simplicity
+      - end-to-end experience
+      - scope cutting
+
+  - id: yu-jun-product-skill
+    name: Yu Jun Product Skill
+    type: person-method-skill
+    status: planned
+    repo: null
+    suggested_repo: https://github.com/shiyangye6/yu-jun-product-skill
+    focus:
+      - user value
+      - utility
+      - transaction model
+      - demand matching
+
+  - id: zhang-xiaolong-product-skill
+    name: Zhang Xiaolong Product Skill
+    type: person-method-skill
+    status: planned
+    repo: null
+    suggested_repo: https://github.com/shiyangye6/zhang-xiaolong-product-skill
+    focus:
+      - restraint
+      - user psychology
+      - social products
+      - default behavior
+
+  - id: zhang-yiming-product-skill
+    name: Zhang Yiming Product Skill
+    type: person-method-skill
+    status: planned
+    repo: null
+    suggested_repo: https://github.com/shiyangye6/zhang-yiming-product-skill
+    focus:
+      - information efficiency
+      - feedback loops
+      - data iteration
+      - systems thinking
+
+  - id: liang-ning-product-skill
+    name: Liang Ning Product Skill
+    type: person-method-skill
+    status: planned
+    repo: null
+    suggested_repo: https://github.com/shiyangye6/liang-ning-product-skill
+    focus:
+      - scenario
+      - emotion
+      - product personality
+      - pain points and delight
+
+  - id: su-jie-product-skill
+    name: Su Jie Product Skill
+    type: person-method-skill
+    status: planned
+    repo: null
+    suggested_repo: https://github.com/shiyangye6/su-jie-product-skill
+    focus:
+      - requirement analysis
+      - PRD
+      - product planning
+      - delivery coordination
+
+  - id: growth-pm-skill
+    name: Growth PM Skill
+    type: archetype-skill
+    status: planned
+    repo: null
+    suggested_repo: https://github.com/shiyangye6/growth-pm-skill
+    focus:
+      - acquisition
+      - activation
+      - retention
+      - monetization
+      - referral
