@@ -119,12 +119,12 @@ skills:
       - social products
       - default behavior
 
-  - id: zhang-yiming-product-skill
+  - id: zhang-yiming-perspective
     name: 张一鸣产品 Skill
     type: person-method-skill
-    status: planned
-    repo: null
-    suggested_repo: https://github.com/shiyangye6/zhang-yiming-product-skill
+    status: published
+    repo: https://github.com/shiyangye6/zhang-yiming-perspective
+    suggested_repo: https://github.com/shiyangye6/zhang-yiming-perspective
     focus:
       - information efficiency
       - feedback loops
