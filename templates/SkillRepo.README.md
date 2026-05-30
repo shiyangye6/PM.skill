@@ -16,25 +16,33 @@
 - <问题 2>
 - <问题 3>
 
-## 如何使用
+## 安装
 
-### 不安装，直接复制 Prompt
+本 Skill 基于开放的 Agent Skills 结构，可在 Claude Code、Codex、Cursor 等 skills-compatible AI agent runtime 中运行。
 
-```text
-请使用 <skill-id> 帮我审查下面这个产品想法，并输出第一版 Spec.md：
+### 方式一：一行命令（推荐，跨 runtime 自动检测）
 
-<粘贴产品想法>
+```bash
+npx skills add <owner>/<repo>
 ```
 
-或：
+通用 CLI 安装器会自动识别当前 runtime，并把 Skill 放到正确目录。需要指定 runtime 时，可加参数：
 
-```text
-请使用 <skill-id> 从 <方法论视角> 帮我判断这个 MVP 范围是否过大。
+```bash
+npx skills add <owner>/<repo> -a claude-code
+npx skills add <owner>/<repo> -a codex
+npx skills add <owner>/<repo> -a cursor
 ```
 
-### 安装到本地 skills 目录
+### 方式二：手动安装
 
-如果你的 AI 编程工具支持本地 skills，可以克隆仓库到对应目录。
+如果一行命令不可用，可以手动克隆到对应目录：
+
+| Runtime | 安装路径 |
+| --- | --- |
+| Claude Code | `~/.claude/skills/<skill-id>/` |
+| Codex | `~/.codex/skills/<skill-id>/` |
+| Cursor | `~/.cursor/skills/<skill-id>/` |
 
 Claude 本地 skill 示例：
 
@@ -52,6 +60,24 @@ Codex 本地 skill 示例：
 
 ```bash
 git clone <repo-url> ~/.codex/skills/<skill-id>
+```
+
+### 方式三：不安装，直接当 Prompt 用
+
+如果你的工具暂时不支持 Agent Skills 自动加载，也可以直接复制 `SKILL.md` 的内容粘贴进对话。
+
+## 使用
+
+```text
+请使用 <skill-id> 帮我审查下面这个产品想法，并输出第一版 Spec.md：
+
+<粘贴产品想法>
+```
+
+或：
+
+```text
+请使用 <skill-id> 从 <方法论视角> 帮我判断这个 MVP 范围是否过大。
 ```
 
 安装后可以这样触发：

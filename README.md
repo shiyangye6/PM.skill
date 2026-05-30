@@ -32,9 +32,50 @@
 
 ---
 
-## 快速使用
+## 安装
 
-### 方式 1：不安装，直接复制 Prompt
+本项目既可以作为主索引阅读，也可以把 `pm-spec-writer` 当作一个通用产品文档 Skill 安装。
+
+### 方式一：一行命令（推荐，跨 runtime 自动检测）
+
+```bash
+npx skills add shiyangye6/PM.skill
+```
+
+通用 CLI 安装器会自动识别当前 runtime，并把 Skill 放到正确目录。需要指定 runtime 时，可加参数：
+
+```bash
+npx skills add shiyangye6/PM.skill -a claude-code
+npx skills add shiyangye6/PM.skill -a codex
+npx skills add shiyangye6/PM.skill -a cursor
+```
+
+### 方式二：一键安装某个单独产品经理 Skill
+
+如果你只想安装某个产品经理视角，直接安装对应仓库。
+
+```bash
+npx skills add shiyangye6/zhang-xiaolong-perspective
+```
+
+### 方式三：手动安装
+
+如果一行命令不可用，可以把本仓库或单个 skill 仓库克隆到对应目录：
+
+| Runtime | 主项目安装路径 | 张小龙 Skill 安装路径 |
+| --- | --- | --- |
+| Claude Code | `~/.claude/skills/PM.skill/` | `~/.claude/skills/zhang-xiaolong-perspective/` |
+| Codex | `~/.codex/skills/PM.skill/` | `~/.codex/skills/zhang-xiaolong-perspective/` |
+| Cursor | `~/.cursor/skills/PM.skill/` | `~/.cursor/skills/zhang-xiaolong-perspective/` |
+
+Windows PowerShell 示例：
+
+```powershell
+git clone https://github.com/shiyangye6/PM.skill.git "$env:USERPROFILE\.claude\skills\PM.skill"
+git clone https://github.com/shiyangye6/zhang-xiaolong-perspective.git "$env:USERPROFILE\.claude\skills\zhang-xiaolong-perspective"
+```
+
+### 方式四：不安装，直接复制 Prompt
 
 把下面这段交给 AI 编程工具，并附上你的产品想法：
 
@@ -52,7 +93,7 @@
 请基于 templates/DevDoc.md 生成第一版 DevDoc.md，要求包含数据模型、页面结构、接口草案、状态流转、边界情况和验收标准。
 ```
 
-### 方式 2：使用某个产品经理 Skill
+## 使用某个产品经理 Skill
 
 如果你想调用某个单独的产品经理视角，先到下面的 Skill 链接目录，打开对应仓库，然后复制该仓库里的 `SKILL.md` 或快速使用 Prompt。
 
@@ -64,31 +105,6 @@
 
 我的产品想法：
 <粘贴你的想法>
-```
-
-### 方式 3：安装到本地 skills 目录
-
-如果你的 AI 编程工具支持本地 skills，可以把本仓库或单个 skill 仓库克隆到对应的 skills 目录。
-
-Claude 本地 skill 示例：
-
-```bash
-git clone https://github.com/shiyangye6/PM.skill.git ~/.claude/skills/PM.skill
-git clone https://github.com/shiyangye6/zhang-xiaolong-perspective.git ~/.claude/skills/zhang-xiaolong-perspective
-```
-
-Windows PowerShell 示例：
-
-```powershell
-git clone https://github.com/shiyangye6/PM.skill.git "$env:USERPROFILE\.claude\skills\PM.skill"
-git clone https://github.com/shiyangye6/zhang-xiaolong-perspective.git "$env:USERPROFILE\.claude\skills\zhang-xiaolong-perspective"
-```
-
-Codex 本地 skill 示例：
-
-```bash
-git clone https://github.com/shiyangye6/PM.skill.git ~/.codex/skills/PM.skill
-git clone https://github.com/shiyangye6/zhang-xiaolong-perspective.git ~/.codex/skills/zhang-xiaolong-perspective
 ```
 
 安装后，可以这样触发：
