@@ -81,3 +81,11 @@ git clone <repo-url> ~/.codex/skills/<skill-id>
 ## 主索引
 
 本 skill 属于 [`产品经理 Skill 图鉴`](https://github.com/shiyangye6/PM.skill) 目录。
+
+## 关于作者
+
+我是小叶，正在持续整理和蒸馏适合独立开发者、AI 编程新人使用的产品经理方法论 Skill。
+
+如果你也在做 AI 产品、独立开发、产品经理训练，或者想一起完善这些 Skill，欢迎通过公众号联系我，一起讨论和共创。
+
+- 公众号：江城AI小叶
