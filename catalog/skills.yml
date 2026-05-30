@@ -107,12 +107,12 @@ skills:
       - transaction model
       - demand matching
 
-  - id: zhang-xiaolong-product-skill
+  - id: zhang-xiaolong-perspective
     name: 张小龙产品 Skill
     type: person-method-skill
-    status: planned
-    repo: null
-    suggested_repo: https://github.com/shiyangye6/zhang-xiaolong-product-skill
+    status: published
+    repo: https://github.com/shiyangye6/zhang-xiaolong-perspective
+    suggested_repo: https://github.com/shiyangye6/zhang-xiaolong-perspective
     focus:
       - restraint
       - user psychology

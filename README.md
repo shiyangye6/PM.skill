@@ -9,7 +9,7 @@
 - `marty-cagan-product-skill`
 - `teresa-torres-discovery-skill`
 - `yu-jun-product-skill`
-- `zhang-xiaolong-product-skill`
+- `zhang-xiaolong-perspective`
 
 当前仓库负责做三件事：
 
@@ -117,7 +117,7 @@
 marty-cagan-product-skill
 teresa-torres-discovery-skill
 yu-jun-product-skill
-zhang-xiaolong-product-skill
+zhang-xiaolong-perspective
 ```
 
 展示名规则：
@@ -167,7 +167,7 @@ zhang-xiaolong-product-skill
 | Julie Zhuo Design PM Skill | 设计协作、体验评审、清晰表达 | 计划中 | 待创建 |
 | Jobs Product Taste Skill | 端到端体验、取舍、产品品味 | 计划中 | 待创建 |
 | 俞军产品 Skill | 用户价值、交易模型、效用分析 | 计划中 | 待创建 |
-| 张小龙产品 Skill | 克制、自然、用户心理、关系链 | 计划中 | 待创建 |
+| 张小龙产品 Skill | 克制、自然、用户心理、关系链 | 已发布 | [shiyangye6/zhang-xiaolong-perspective](https://github.com/shiyangye6/zhang-xiaolong-perspective) |
 | 张一鸣产品 Skill | 信息效率、反馈系统、数据迭代 | 计划中 | 待创建 |
 | 梁宁产品 Skill | 场景、情绪、痛点爽点、产品人格 | 计划中 | 待创建 |
 | 苏杰产品 Skill | 需求分析、PRD、产品推进 | 计划中 | 待创建 |
