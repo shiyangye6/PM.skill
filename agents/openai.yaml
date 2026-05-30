@@ -1,0 +1,8 @@
+interface:
+  display_name: "PM Spec Writer"
+  short_description: "把产品想法转成可开发的 Spec/PRD/DevDoc"
+  brand_color: "#2563EB"
+  default_prompt: "Use $pm-spec-writer to turn my product idea into a first version Spec.md."
+
+policy:
+  allow_implicit_invocation: true
