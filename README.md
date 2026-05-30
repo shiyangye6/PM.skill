@@ -36,7 +36,23 @@
 
 本项目既可以作为主索引阅读，也可以把 `pm-spec-writer` 当作一个通用产品文档 Skill 安装。
 
-### 方式一：一行命令（推荐，跨 runtime 自动检测）
+### 方式一：一句话让 Agent 安装（最简单）
+
+在 Claude Code、Codex、Cursor 等支持 GitHub Skill 安装的工具里，直接发送：
+
+```text
+帮我安装这个 skill：https://github.com/shiyangye6/PM.skill
+```
+
+如果你只想安装张小龙产品视角，可以发送：
+
+```text
+帮我安装这个 skill：https://github.com/shiyangye6/zhang-xiaolong-perspective
+```
+
+如果你的 agent 支持从 GitHub 安装 skills，它会自动拉取仓库并安装到对应目录。
+
+### 方式二：一行命令安装
 
 ```bash
 npx skills add shiyangye6/PM.skill
@@ -50,7 +66,7 @@ npx skills add shiyangye6/PM.skill -a codex
 npx skills add shiyangye6/PM.skill -a cursor
 ```
 
-### 方式二：一键安装某个单独产品经理 Skill
+### 方式三：用命令安装某个单独产品经理 Skill
 
 如果你只想安装某个产品经理视角，直接安装对应仓库。
 
@@ -58,9 +74,9 @@ npx skills add shiyangye6/PM.skill -a cursor
 npx skills add shiyangye6/zhang-xiaolong-perspective
 ```
 
-### 方式三：手动安装
+### 方式四：手动安装
 
-如果一行命令不可用，可以把本仓库或单个 skill 仓库克隆到对应目录：
+如果上面两种方式不可用，可以把本仓库或单个 skill 仓库克隆到对应目录：
 
 | Runtime | 主项目安装路径 | 张小龙 Skill 安装路径 |
 | --- | --- | --- |
@@ -75,7 +91,7 @@ git clone https://github.com/shiyangye6/PM.skill.git "$env:USERPROFILE\.claude\s
 git clone https://github.com/shiyangye6/zhang-xiaolong-perspective.git "$env:USERPROFILE\.claude\skills\zhang-xiaolong-perspective"
 ```
 
-### 方式四：不安装，直接复制 Prompt
+### 方式五：不安装，直接复制 Prompt
 
 把下面这段交给 AI 编程工具，并附上你的产品想法：
 

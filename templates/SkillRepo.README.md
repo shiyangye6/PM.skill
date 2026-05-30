@@ -20,7 +20,17 @@
 
 本 Skill 基于开放的 Agent Skills 结构，可在 Claude Code、Codex、Cursor 等 skills-compatible AI agent runtime 中运行。
 
-### 方式一：一行命令（推荐，跨 runtime 自动检测）
+### 方式一：一句话让 Agent 安装（最简单）
+
+在 Claude Code、Codex、Cursor 等支持 GitHub Skill 安装的工具里，直接发送：
+
+```text
+帮我安装这个 skill：<repo-url>
+```
+
+如果你的 agent 支持从 GitHub 安装 skills，它会自动拉取仓库并安装到对应目录。
+
+### 方式二：一行命令安装
 
 ```bash
 npx skills add <owner>/<repo>
@@ -34,9 +44,9 @@ npx skills add <owner>/<repo> -a codex
 npx skills add <owner>/<repo> -a cursor
 ```
 
-### 方式二：手动安装
+### 方式三：手动安装
 
-如果一行命令不可用，可以手动克隆到对应目录：
+如果上面两种方式不可用，可以手动克隆到对应目录：
 
 | Runtime | 安装路径 |
 | --- | --- |
@@ -62,7 +72,7 @@ Codex 本地 skill 示例：
 git clone <repo-url> ~/.codex/skills/<skill-id>
 ```
 
-### 方式三：不安装，直接当 Prompt 用
+### 方式四：不安装，直接当 Prompt 用
 
 如果你的工具暂时不支持 Agent Skills 自动加载，也可以直接复制 `SKILL.md` 的内容粘贴进对话。
 
